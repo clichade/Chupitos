@@ -29,9 +29,9 @@ public class Main_Activity extends AppCompatActivity implements View.OnClickList
         //creamos los 3 chupitos que nos interesa cojer
         listC.add(new Chupito("Jagger", Tipo.EXOTICO,
                 "Chupito Normal, que no es ninguna locura", "Jagger", "Lima"));
-        listC.add(new Chupito("BlueTropic", Tipo.EXOTICO,
-                "Este almenos sabe rico", "Trópico", "Azul"));
-        listC.add(new Chupito("Absenta", Tipo.EXOTICO,
+        listC.add(new Chupito("BlueTropic", Tipo.SUAVE,
+                "Por el nombre seguro que deduces que es azul", "Trópico", "Azul"));
+        listC.add(new Chupito("Absenta", Tipo.DURO,
                 "Es absenta, este te lo conoces", "absenta", "SATÁN","REDES"));
 
         btSuave = (Button) this.findViewById(R.id.btSuave);
@@ -65,7 +65,6 @@ public class Main_Activity extends AppCompatActivity implements View.OnClickList
                 b.putString("nombre", chupito.getNombre());
                 b.putString("descripcion",chupito.getDescripcion());
                 b.putInt("ivIcon",chupito.getIcon());
-                System.out.println("entra en suave");
                 intent.putExtras(b);
                 startActivity(intent);
                 break;
@@ -88,7 +87,7 @@ public class Main_Activity extends AppCompatActivity implements View.OnClickList
                 b.putString("nombre", chupito.getNombre());
                 b.putString("descripcion",chupito.getDescripcion());
                 b.putInt("ivIcon",chupito.getIcon());
-                System.out.println("entra en matar");
+
                 intent.putExtras(b);
                 startActivity(intent);
                 break;

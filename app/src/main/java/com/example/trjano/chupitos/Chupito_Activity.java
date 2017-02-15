@@ -13,6 +13,8 @@ import android.widget.TextView;
  */
 
 public class Chupito_Activity extends AppCompatActivity  {
+    //Las variables que usaremos para mostrar por pantalla
+
     ImageView ivPhoto;
     TextView tvIngredients;
     TextView tvDescription;
@@ -22,10 +24,15 @@ public class Chupito_Activity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chupito_activity);
 
+        //como se pude ver simplemente inicializmos dle arvchivo chupito_activity.xml los componentes
+        //que nos interesan
         ivPhoto = (ImageView) findViewById(R.id.ivphoto);
         tvIngredients = (TextView) findViewById(R.id.tvIngredients);
         tvDescription = (TextView) findViewById(R.id.tvDescription);
         tvNombreChupito = (TextView) findViewById(R.id.tvNombreChupito);
+
+        //obtiene un conunto de extras desde el Intent ,
+        // que es la interfaz que lanza la activity
 
         Bundle b = getIntent().getExtras();
         if(b != null){
