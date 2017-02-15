@@ -22,7 +22,7 @@ public class Main_Activity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.Main_Activity);
+        setContentView(R.layout.main_activity);
         listC = new ArrayList<>();
 
 
