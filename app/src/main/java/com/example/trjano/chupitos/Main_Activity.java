@@ -1,17 +1,11 @@
 package com.example.trjano.chupitos;
 
 import android.content.Intent;
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -19,7 +13,7 @@ import java.util.ArrayList;
  * Un fragment es digamos una sub activity (una activity dentro de otra), y se usa dentro de una acivity
  */
 
-public class Inicio_Activity extends AppCompatActivity implements View.OnClickListener{
+public class Main_Activity extends AppCompatActivity implements View.OnClickListener{
 
     Button btSuave; Button btExotico; Button btA_Matar;
     TextView tvTipos;
@@ -28,16 +22,18 @@ public class Inicio_Activity extends AppCompatActivity implements View.OnClickLi
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.inicio_view);
+        setContentView(R.layout.Main_Activity);
         listC = new ArrayList<>();
 
 
+        //creamos los 3 chupitos que nos interesa cojer
         listC.add(new Chupito("Jagger", Tipo.EXOTICO,
                 "Chupito Normal, que no es ninguna locura", "Jagger", "Lima"));
         listC.add(new Chupito("BlueTropic", Tipo.EXOTICO,
                 "Este almenos sabe rico", "Trópico", "Azul"));
         listC.add(new Chupito("Absenta", Tipo.EXOTICO,
                 "Es absenta, este te lo conoces", "absenta", "SATÁN","REDES"));
+
         btSuave = (Button) this.findViewById(R.id.btSuave);
         btExotico = (Button) this.findViewById(R.id.btExotico);
         btA_Matar = (Button) this.findViewById(R.id.btA_Matar) ;
