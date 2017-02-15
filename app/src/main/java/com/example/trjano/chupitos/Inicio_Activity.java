@@ -31,15 +31,13 @@ public class Inicio_Activity extends AppCompatActivity implements View.OnClickLi
         setContentView(R.layout.inicio_view);
         listC = new ArrayList<>();
 
-        listC.add(new Chupito("Piporro", Tipo.EXOTICO, "Chupito Normal, que no es ninguna locura",
-                "Piperro", "Manifiesto comunista"));
 
-        listC.add(new Chupito("Piporro", Tipo.EXOTICO, "Chupito Normal, que no es ninguna locura",
-                "Piperro", "Manifiesto comunista"));
-
-        listC.add(new Chupito("Piporro", Tipo.EXOTICO, "Chupito Normal, que no es ninguna locura",
-                "Piperro", "Manifiesto comunista"));
-
+        listC.add(new Chupito("Jagger", Tipo.EXOTICO,
+                "Chupito Normal, que no es ninguna locura", "Jagger", "Lima"));
+        listC.add(new Chupito("BlueTropic", Tipo.EXOTICO,
+                "Este almenos sabe rico", "Trópico", "Azul"));
+        listC.add(new Chupito("Absenta", Tipo.EXOTICO,
+                "Es absenta, este te lo conoces", "absenta", "SATÁN","REDES"));
         btSuave = (Button) this.findViewById(R.id.btSuave);
         btExotico = (Button) this.findViewById(R.id.btExotico);
         btA_Matar = (Button) this.findViewById(R.id.btA_Matar) ;
